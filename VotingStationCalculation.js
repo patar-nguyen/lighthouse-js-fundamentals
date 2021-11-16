@@ -17,16 +17,4 @@ console.log(chooseStations(stations));
 
 
 
-/*const chooseStations = function (stations){
-  let goodStations = [];
 
-  for (let rightStation of stations){
-    if (rightStation[1] >= 20 && (rightStation[2] === 'school' || rightStation[2] === 'community centre')) {
-      goodStations.push(rightStation[0]);
-    }
-  } 
-  return goodStations;
-}
-
-
-console.log(chooseStations(stations));*/
