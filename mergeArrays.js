@@ -1,0 +1,18 @@
+let merge = function(firstArray, secondArray){
+  let mergedArray = [];
+
+  for(let first of firstArray){
+    mergedArray.push(first);
+  }
+  for(let second of secondArray){
+    mergedArray.push(second);
+  }
+
+  mergedArray.sort();
+
+  return mergedArray;
+}
+
+console.log(merge([ 4, 5, 6 ], [ 1, 2, 3, 4 ]), "=?", [ 1, 2, 3, 4, 4, 5, 6 ]);
+console.log(merge([ 4 ], [ 2, 5, 8 ]), "=?", [ 2, 4, 5, 8 ]);
+console.log(merge([ 1, 2, 6 ], []), "=?", [ 1, 2, 6 ]);
